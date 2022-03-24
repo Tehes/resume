@@ -1,6 +1,6 @@
 :root {
     --achromatic: 0, 0%;  /* neutral color */
-    --bg-color: hsl(var(--achromatic), 95%);
+    --bg-color: hsl(var(--achromatic), 96%);
     --font-color: hsl(var(--achromatic), 20%);
 
     --accent-color: hsl(200, 50%, 55%);
@@ -112,12 +112,25 @@ section > div {
 	padding:15px;
 	margin-bottom: 15px;
 	background-color: hsl(var(--achromatic), 100%);
-	box-shadow: 0 2px 2px hsl(var(--achromatic), 70%);
+	box-shadow: 0 2px 2px hsl(var(--achromatic), 90%);
 	font-size: 1.2rem;
 	display: flex;
 	justify-content: space-between;
-	/*border-radius: 5px;*/
+	border-radius: 5px;
 	border-left: 4px solid var(--accent-color);
+}
+
+/*
+-------------------------------------------------------------------
+SECTION
+-------------------------------------------------------------------
+*/
+
+footer {
+	width: 100%;
+	padding: 30px;
+	background-color: hsl(var(--achromatic), 20%);
+	color: hsl(var(--achromatic), 90%);
 }
 
 /*
