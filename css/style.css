@@ -24,6 +24,7 @@ body {
     color: var(--font-color);
     font-family: 'Dosis', sans-serif;
     font-size: 100%;
+	box-shadow: 0 0px 15px hsl(var(--achromatic), 70%);
 }
 
 ul, h1, h2, h3, p {
@@ -41,7 +42,6 @@ header {
     width: 100%;
     padding: 60px;
     background-color: hsl(var(--achromatic), 100%);
-    box-shadow: 0 0px 15px hsl(var(--achromatic), 70%);
     display: flex;
     justify-content: space-between;
 }
