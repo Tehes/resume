@@ -20,11 +20,11 @@ html {
 
 body {
     margin: 40px;
-    background-color: var(--bg-color);
     color: var(--font-color);
     font-family: 'Dosis', sans-serif;
     font-size: 100%;
-	box-shadow: 0 0px 15px hsl(var(--achromatic), 70%);
+	background-color: var(--bg-color);
+	border-radius: 5px;
 }
 
 ul, h1, h2, h3, p {
@@ -44,6 +44,10 @@ header {
     background-color: hsl(var(--achromatic), 100%);
     display: flex;
     justify-content: space-between;
+	box-shadow: 0 0px 15px hsl(var(--achromatic), 70%);
+	border-radius: 5px 5px 0 0;
+	position: sticky;
+	top: 0;
 }
 
 h1 {
@@ -131,6 +135,7 @@ footer {
 	padding: 30px;
 	background-color: hsl(var(--achromatic), 20%);
 	color: hsl(var(--achromatic), 90%);
+	border-radius: 0 0 5px 5px;
 }
 
 /*
