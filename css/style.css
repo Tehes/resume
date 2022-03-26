@@ -127,7 +127,7 @@ section > div {
 	justify-content: space-between;
 	border-radius: var(--rounded-corners);
 	border-left: 4px solid var(--accent-color);
-	column-gap: var(--spacing);
+	gap: var(--spacing);
 }
 
 section > div:last-of-type {
