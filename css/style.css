@@ -4,7 +4,6 @@
     --font-color: hsl(var(--achromatic), 20%);
 
     --accent-color: hsl(200, 50%, 55%);
-	--accent2: hsl(0, 50%, 55%);
 	
 	--spacing: 3vw;
 	--rounded-corners: 5px;
@@ -111,9 +110,12 @@ section + section {
 
 h3 {
 	flex: 1 0 100%;
+	background-color: var(--bg-color);
 	font-size: 1.5rem;
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 	text-transform: uppercase;
+	position: sticky;
+	top: 0;
 }
 
 section > div {
@@ -130,20 +132,20 @@ section > div {
 	gap: var(--spacing);
 }
 
-section > div:last-of-type {
-	margin-bottom: 0;
-}
-
-#language {
+#language, #interests {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 4%;
 }
 
 #language > div {
+	--accent-color: hsl(0, 50%, 55%);
 	flex: 0 0 22%;
-	height: fit-content;
-	border-left: 4px solid var(--accent2);
+}
+
+#interests > div {
+	--accent-color: hsl(60, 50%, 55%);
+	flex: 0 0 48%;
 }
 
 /*
