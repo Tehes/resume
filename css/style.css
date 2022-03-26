@@ -4,6 +4,9 @@
     --font-color: hsl(var(--achromatic), 20%);
 
     --accent-color: hsl(200, 50%, 55%);
+	
+	--spacing: 3vw;
+	--rounded-corners: 5px;
 }
 
 * {
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-    margin: 40px;
+    margin: var(--spacing);
     color: var(--font-color);
     font-family: 'Dosis', sans-serif;
     font-size: 100%;
@@ -40,14 +43,14 @@ HEADER
 
 header {
     width: 100%;
-    padding: 60px;
+    padding: var(--spacing);
     background-color: hsl(var(--achromatic), 100%);
     display: flex;
     justify-content: space-between;
 	box-shadow: 0 0px 15px hsl(var(--achromatic), 70%);
-	border-radius: 5px 5px 0 0;
-	position: sticky;
-	top: 0;
+	border-radius: var(--rounded-corners) var(--rounded-corners) 0 0;
+	/*position: sticky;
+	top: 0;*/
 }
 
 h1 {
@@ -98,7 +101,7 @@ SECTION
 */
 
 section {
-	padding: 30px;
+	padding: var(--spacing);
 }
 
 section + section {
@@ -113,15 +116,20 @@ h3 {
 
 section > div {
 	width: 100%;
-	padding:15px;
+	padding: 15px;
 	margin-bottom: 15px;
 	background-color: hsl(var(--achromatic), 100%);
 	box-shadow: 0 2px 2px hsl(var(--achromatic), 90%);
 	font-size: 1.2rem;
 	display: flex;
 	justify-content: space-between;
-	border-radius: 5px;
+	border-radius: var(--rounded-corners);
 	border-left: 4px solid var(--accent-color);
+	gap: var(--spacing);
+}
+
+section > div:last-of-type {
+	margin-bottom: 0;
 }
 
 /*
@@ -132,10 +140,10 @@ SECTION
 
 footer {
 	width: 100%;
-	padding: 30px;
+	padding: var(--spacing);
 	background-color: hsl(var(--achromatic), 20%);
 	color: hsl(var(--achromatic), 90%);
-	border-radius: 0 0 5px 5px;
+	border-radius: 0 0 var(--rounded-corners) var(--rounded-corners);
 }
 
 /*
@@ -148,4 +156,26 @@ MEDIA QUERIES
         --bg-color: hsl(var(--achromatic), 10%);
         --font-color: hsl(var(--achromatic), 80%);
     }
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+	:root {
+		--spacing: 4.5vw;
+	}
+	header {
+		flex-direction: column-reverse;
+	}
+	
+	header > img {
+		margin: 0 auto;
+	}
+	
+	h1 {
+		font-size: 3.2rem;
+		margin-top: 1rem;
+	}
+	
+	section > div {
+		flex-direction: column-reverse;
+	}
 }
