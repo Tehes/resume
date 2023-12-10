@@ -232,8 +232,21 @@ MEDIA QUERIES
 		box-shadow: initial;
 	}
 
+	header ul {
+		display: initial;
+	}
+
 	header li img {
 		display: none;
+	}
+
+	header a:after {
+		content:' ' attr(href);
+	  }
+
+	header a:link, header a:active, header a:visited {
+		text-decoration: none;
+		color: initial;
 	}
 
 	section>div {
