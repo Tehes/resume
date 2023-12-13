@@ -237,11 +237,40 @@ MEDIA QUERIES
 		box-shadow: initial;
 	}
 
+	h1 {
+		font-size: 28pt;
+		margin-bottom: 4mm;
+	}
+
+	h2 {
+		font-size: 20pt;
+		margin-bottom: 4mm;
+	}
+
+	h3 {
+		font-size: 18pt;
+		padding-bottom: 4mm;
+	}
+
+	header p {
+		font-size: 14pt;
+		padding-bottom: 0mm;
+	}
+
+	header p::before {
+		content: "Starkenburgring 55, ";
+	}
+
 	header ul {
 		display: initial;
 	}
 
-	header li img {
+	header>img {
+		width: 6cm;
+		height: 6cm;
+	}
+
+	header li img, header p img {
 		display: none;
 	}
 
@@ -255,10 +284,10 @@ MEDIA QUERIES
 	}
 
 	section>div {
-		padding: 15px;
-		margin-bottom: 15px;
+		padding: 2mm;
+		margin-bottom: 2mm;
 		box-shadow: initial;
-		font-size: 1.2rem;
+		font-size: 12pt;
 		border-radius: var(--rounded-corners);
 		border-left: 4px solid var(--accent-color);
 		background-color: hsl(0, 0%, 95%);
