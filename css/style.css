@@ -138,6 +138,11 @@ section>div {
 	border-radius: var(--rounded-corners);
 	border-left: 4px solid var(--accent-color);
 	gap: var(--spacing);
+	transition: box-shadow 0.3s;
+}
+
+section>div:hover {
+	box-shadow:0 2px 4px var(--shadow);
 }
 
 #language,
