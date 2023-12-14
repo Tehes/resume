@@ -95,12 +95,24 @@ header p {
 	margin-bottom: 1rem;
 }
 
-header>img {
+#profile-pic {
 	border: 5px solid hsl(var(--achromatic), 95%);
 	width: 280px;
 	height: 280px;
 	border-radius: 50%;
+	overflow: hidden;
 }
+
+#profile-pic img {
+	transition: transform 0.5s ease;
+	width: 280px;
+	height: 280px;
+}
+
+#profile-pic img:hover {
+	transform: scale(1.2);
+}
+
 
 /*
 -------------------------------------------------------------------
@@ -265,9 +277,15 @@ MEDIA QUERIES
 		display: initial;
 	}
 
-	header>img {
+	#profile-pic {
 		width: 6cm;
 		height: 6cm;
+	}
+	
+	#profile-pic img {
+		width: 6cm;
+		height: 6cm;
+		transform: scale(1.2);
 	}
 
 	header li img, header p img {
