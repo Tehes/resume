@@ -219,7 +219,7 @@ MEDIA QUERIES
 		flex-direction: column-reverse;
 	}
 
-	header>img {
+	#profile-pic {
 		margin: 0 auto;
 	}
 
