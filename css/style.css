@@ -71,6 +71,7 @@ h1 {
 h2 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
+	text-wrap: balance;
 }
 
 header ul {
@@ -156,6 +157,10 @@ section>div {
 
 section>div:hover {
 	box-shadow:0 2px 4px var(--shadow);
+}
+
+aside {
+	flex-shrink: 0;
 }
 
 #language,
