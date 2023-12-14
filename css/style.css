@@ -101,6 +101,7 @@ header p {
 	height: 280px;
 	border-radius: 50%;
 	overflow: hidden;
+	flex-shrink: 0;
 }
 
 #profile-pic img {
