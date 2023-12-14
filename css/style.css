@@ -289,13 +289,23 @@ MEDIA QUERIES
 		transform: scale(1.2);
 	}
 
-	header li img, header p img {
+	header p img {
 		display: none;
 	}
 
+	header li img {
+		width: 8mm;
+		height: 8mm;
+		vertical-align:middle;
+	}
+
+	header li:not(:last-child) {
+		margin-bottom: 2mm;
+	}
+
 	header a:after {
-		content:' ' attr(href);
-	  }
+		content: " " attr(href);
+	}
 
 	header a:link, header a:active, header a:visited {
 		text-decoration: none;
