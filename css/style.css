@@ -333,5 +333,6 @@ MEDIA QUERIES
 
 	body::after {
 		content: "Dieser Lebenslauf ist online unter https://tehes.github.io/resume/ abrufbar.";
+		padding: var(--spacing);
 	}
 }
